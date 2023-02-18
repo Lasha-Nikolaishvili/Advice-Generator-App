@@ -1,0 +1,77 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);
+    min-height: 100vh;
+    position: relative;;
+}
+
+.c-cont {
+    min-height: 100vh;
+}
+
+.c {
+    background-color: hsl(217, 19%, 24%);
+    width: 32em;
+    position: relative;
+    background-image: url("./images/pattern-divider-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center calc(100% - 2.5em);
+    background-size: 90%;
+}
+
+.c-adv-num {
+    color: hsl(150, 100%, 66%);
+}
+
+.c-adv-text {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.divider-parent {
+    overflow: hidden;
+}
+
+.dice {
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    bottom: -1.5em;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    background-image: url(./images/icon-dice.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.dice:hover {
+    background-color: hsl(150, 100%, 66%)!important;
+    box-shadow: 0px 0px 15px hsl(150, 100%, 66%);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media (max-width:400px) {
+    .c {
+        background-image: url(./images/pattern-divider-mobile.svg);
+    }
+}
+
+@media (orientation: landscape) {
+    body {
+        padding: 2em 0;
+    }
+}
