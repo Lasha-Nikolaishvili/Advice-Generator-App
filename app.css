@@ -54,7 +54,7 @@ body {
 
 .dice:hover {
     background-color: hsl(150, 100%, 66%)!important;
-    box-shadow: 0px 0px 15px hsl(150, 100%, 66%);
+    box-shadow: 0px 0px 25px hsl(150, 100%, 66%);
 }
 
 .attribution {
